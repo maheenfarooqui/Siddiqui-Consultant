@@ -71,7 +71,7 @@ nav button , .hero button{
     transition: 0.3s;
 }
 
-nav button:hover , .hero button:hover {
+nav button:hover , .hero button:hover , .aboutContent button:hover{
     background: linear-gradient(135deg, #0cb76c , #079643);
     
 }
@@ -120,11 +120,15 @@ nav button:hover , .hero button:hover {
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 300px;
+    height: 400px;
     gap: 40px;
     border: 1px solid #E8E8E8;
     padding: 10px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
+}
+.serviceCard:hover{
+    border: none;
 }
 .serviceCard .iconCircle {
   display: flex;
@@ -142,11 +146,53 @@ nav button:hover , .hero button:hover {
     background: linear-gradient(135deg, #5aa9f4, #0370CB);
 }
 .serviceCard h3{
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 25px;
 }
 .serviceCard p{
     color: grey;
     line-height: 1.5;
+}
+.serviceCard a{
+    text-decoration: none;
+    color: #0370CB;
+}
+/* about section */
+.about{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding:0 70px ;
+}
+.about .aboutContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutContent h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+.aboutContent p{
+    color:gray;
+    line-height: 1.7;
+}
+.aboutContent button{
+    background: linear-gradient(135deg, #079643, #0cb76c);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.aboutImage img{
+    border-radius: 20px;
+    
 }
 
 
@@ -200,5 +246,33 @@ nav button{
     padding: 20px 25px;
     border-radius: 50px;
 }
-
+.services{
+    padding: 0;
+}
+.services h1 , .aboutContent h1{
+    font-size: 28px;
+}
+.serviceBox{
+    flex-direction: column;
+}
+.serviceCard{
+    width: 200px;
+    padding: 10px 30px;
+}
+.serviceCard .iconCircle {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+}
+.serviceCard h3{
+    font-size: 20px;
+}
+.about{
+    flex-direction: column;
+    padding: 0 35px;
+    gap: 50px;
+}
+.about .aboutImage img{
+    width: 300px;
+}
 }
