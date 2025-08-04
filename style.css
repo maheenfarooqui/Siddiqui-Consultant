@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(to right, rgba(3, 112, 203, 0.9), rgba(3, 112, 203, 0)), 
+  url("assete/slide2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+nav img{
+    width: 50px;
+    border-radius: 50%;
+}
+.hamburger{
+    display: none;
+}
+.navItems{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0370CB;
+    transform: translateY(5px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: translateY(8px); 
+    opacity: 1;
+}
+nav button , .hero button{
+    background: linear-gradient(135deg, #079643, #0cb76c);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover , .hero button:hover {
+    background: linear-gradient(135deg, #0cb76c , #079643);
+    
+}
+.hero{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 90px;
+    color: white;
+    gap: 15px;
+
+}
+.hero h1{
+    font-size: 50px;
+}
+.hero button{
+    width: 30%;
+    padding: 20px 25px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:500px){
+nav{
+    padding: 20px;
+} 
+.navItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 90%;
+    background-color: #0370CB;
+    padding: 30px 20px;
+    box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.75);
+    transition: right 0.4s ease-in-out; /* smooth slide */
+    z-index: 999;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+    color: white;
+}  
+nav button{
+    display: none;
+} 
+.hero{
+    width: 90%;
+    padding: 50px 15px;
+}
+.hero h1{
+    font-size: 28px;
+}
+.hero button{
+    width: 60%;
+    padding: 20px 25px;
+    border-radius: 50px;
+}
+
+}
