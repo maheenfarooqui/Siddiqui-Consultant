@@ -194,8 +194,41 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     border-radius: 20px;
     
 }
+/* counter section */
+.counter{
+    margin-top: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.95),rgba(3, 112, 203, 0.85)),url('assete/slide2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 40px;
+    
+}
+.counter .counterContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.counterContent h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.counterContent i{
+    font-size: 50px;
+    color: #0370CB;
 
+}
+.counterContent p{
+    color: white;
 
+    }
 
 
 
@@ -274,5 +307,9 @@ nav button{
 }
 .about .aboutImage img{
     width: 300px;
+}
+.counter{
+    flex-direction: column;
+    padding: 80px 10px;
 }
 }
