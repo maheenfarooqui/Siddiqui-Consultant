@@ -171,7 +171,7 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     flex-direction: column;
     gap: 20px;
 }
-.aboutContent h1{
+.aboutContent h1 , .faQsContent h1{
     font-size: 40px;
     font-weight: 300;
 }
@@ -193,6 +193,11 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
 .aboutImage img{
     border-radius: 20px;
     
+}
+.faQsImage img{
+    width: 500px;
+    height: 550px;
+    border-radius:20px ;
 }
 /* counter section */
 .counter{
@@ -227,8 +232,45 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
 }
 .counterContent p{
     color: white;
+}
+/* faqs section */
+.faQs{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding:0 50px ;
+}
+.faqsBox{
+    margin-top: 40px;
+    padding-bottom: 30px;
+    color: gray;
+    border-bottom: 1px solid #E0E0E0;
 
-    }
+}
+.faqsBox .question{
+    display: flex;
+    gap: 30px;
+
+}
+.faqsBox .answer1 , .faqsBox .answer2 , .faqsBox .answer3{
+    margin: 10px 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease , opacity 0.3s ease;
+    padding: 0 15px;
+    opacity: 0;
+}
+.faqsBox .answer1.active , .faqsBox .answer2.active , .faqsBox .answer3.active{
+    
+    max-height: 200px;
+    opacity: 1;
+}
+.faqsBox .aerrow1.rotate , .faqsBox .aerrow2.rotate , .faqsBox .aerrow3.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
 
 
 
@@ -311,5 +353,13 @@ nav button{
 .counter{
     flex-direction: column;
     padding: 80px 10px;
+}
+.faQs{
+    flex-direction: column;
+    padding:0 30px ;
+}
+.faQs .faQsImage img{
+    width: 300px;
+    height:350px;
 }
 }
