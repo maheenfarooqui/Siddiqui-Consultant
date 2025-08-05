@@ -7,7 +7,7 @@ h1, h2, h3 {
 
   
 }
-p, span, a , i {
+p, span, a , i, input , textarea {
   font-family: 'Roboto', sans-serif;
   
 }
@@ -60,7 +60,7 @@ nav a:hover::after {
     transform: translateY(8px); 
     opacity: 1;
 }
-nav button , .hero button{
+nav button , .hero button , .callUs .callUsContent button{
     background: linear-gradient(135deg, #079643, #0cb76c);
     color: white;
     border: none;
@@ -71,7 +71,11 @@ nav button , .hero button{
     transition: 0.3s;
 }
 
-nav button:hover , .hero button:hover , .aboutContent button:hover{
+nav button:hover , 
+.hero button:hover ,
+.aboutContent button:hover, 
+.contactContent button:hover ,
+.callUs .callUsContent button:hover{
     background: linear-gradient(135deg, #0cb76c , #079643);
     
 }
@@ -86,7 +90,7 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     gap: 15px;
 
 }
-.hero h1{
+.hero h1 , .callUs .callUsContent h1{
     font-size: 50px;
     font-weight: 700;
 }
@@ -158,12 +162,12 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     color: #0370CB;
 }
 /* about section */
-.about{
+.about , .contact{
     margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     padding:0 70px ;
 }
 .about .aboutContent{
@@ -171,7 +175,7 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     flex-direction: column;
     gap: 20px;
 }
-.aboutContent h1 , .faQsContent h1{
+.aboutContent h1 , .faQsContent h1 , .contactContent h1{
     font-size: 40px;
     font-weight: 300;
 }
@@ -190,7 +194,7 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     cursor: pointer;
     transition: 0.3s;
 }
-.aboutImage img{
+.aboutImage img , .contactImage img{
     border-radius: 20px;
     
 }
@@ -239,7 +243,7 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
     padding:0 50px ;
 }
 .faqsBox{
@@ -270,6 +274,89 @@ nav button:hover , .hero button:hover , .aboutContent button:hover{
 .faqsBox .aerrow1.rotate , .faqsBox .aerrow2.rotate , .faqsBox .aerrow3.rotate {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
+}
+/* testimonal section */
+.testimonal , .callUs{
+  margin-top: 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.95),rgba(3, 112, 203, 0.85)),url('assete/slide2.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 80px;
+  color: white;
+
+}
+.testimonal .testimonalContent, .callUs .callUsContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.testimonalContent i{
+    font-size: 80px;
+
+}
+.testimonalContent p , .callUs .callUsContent p{
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+
+}
+.testimonalContent img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.testimonalContent h5{
+    margin-top: -15px;
+
+}
+/* contact section */
+.contactContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+.contactContent form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+}
+.contactContent form input{
+    width: 450px;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    color: gray;
+    outline: none;
+}
+.contactContent form textarea{
+    width: 450px;
+     padding: 40px 0 0 0;
+     border: none;
+    border-bottom: 1px solid #E0E0E0;
+    color: gray;
+    outline: none;
+}
+.contactContent button{
+    background: linear-gradient(135deg, #079643, #0cb76c);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 90%;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 
@@ -324,7 +411,7 @@ nav button{
 .services{
     padding: 0;
 }
-.services h1 , .aboutContent h1{
+.services h1 , .aboutContent h1 , .contact .contactContent h1{
     font-size: 28px;
 }
 .serviceBox{
@@ -347,7 +434,7 @@ nav button{
     padding: 0 35px;
     gap: 50px;
 }
-.about .aboutImage img{
+.about .aboutImage img , .contact .contactImage img{
     width: 300px;
 }
 .counter{
@@ -361,5 +448,14 @@ nav button{
 .faQs .faQsImage img{
     width: 300px;
     height:350px;
+}
+.testimonal{
+    padding: 80px 30px;
+}
+.contact{
+    flex-direction: column;
+}
+.contactContent form input , .contactContent form textarea{
+    width: 250px;
 }
 }
