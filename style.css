@@ -43,7 +43,7 @@ nav a{
     font-size: 18px;
     position: relative;
 }
-nav a::after {
+nav a::after , .foot1 a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -56,7 +56,7 @@ nav a::after {
     transition: all 0.3s ease;
 }
 
-nav a:hover::after {
+nav a:hover::after , .foot1 a:hover::after {
     transform: translateY(8px); 
     opacity: 1;
 }
@@ -358,6 +358,93 @@ nav button:hover ,
     cursor: pointer;
     transition: 0.3s;
 }
+.footer{
+    margin-top: 80px;
+}
+.footer .foot1{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 80px 40px;
+}
+
+.foot1 .footMid , .foot1 .footMid1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.foot1 a{
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+.foot1 h3{
+    font-size: 23px;
+    font-weight: 300;
+}
+.footRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.footRight img{
+    width: 80px;
+    border-radius: 50%;
+}
+.footRight p{
+    color: gray;
+    text-align: center;
+}
+.footLeft{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footLeft .footIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: gray;
+    font-size: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.footLeft .footIcons .iconCircle:hover{
+    color: #0370CB;
+    border-color: #0370CB;
+}
+.footLeft .footIcons .iconCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E0E0E0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+.footer2 {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+.footer2 a {
+  color: #0370CB;
+  text-decoration: none;
+}
+
+
 
 
 
@@ -449,7 +536,7 @@ nav button{
     width: 300px;
     height:350px;
 }
-.testimonal{
+.testimonal , .callUs{
     padding: 80px 30px;
 }
 .contact{
@@ -457,5 +544,22 @@ nav button{
 }
 .contactContent form input , .contactContent form textarea{
     width: 250px;
+}
+.callUs .callUsContent h1{
+    font-size: 30px;
+}
+.callUs .callUsContent p{
+    text-align: start;
+    line-height:1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+.footer .foot1{
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 40px;
+   padding: 50px 20px;
+
 }
 }
