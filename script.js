@@ -1,3 +1,42 @@
+// for header
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".stickyHeader ");
+
+  if (window.scrollY > 80) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+// for popup form
+
+let clickButton = document.querySelectorAll(".clickForm");
+let closeBtn = document.querySelector(".closePopUp");
+let popupForm = document.querySelector(".popUp");
+function showForm(){
+    popupForm.classList.toggle("show");
+
+}
+clickButton.forEach(button =>{
+    button.addEventListener("click", showForm);
+
+});
+closeBtn.addEventListener("click", () => {
+    popupForm.classList.remove("show");
+});
+
+
+
+
+
+
+
+
+
+
+
+
 // for faqs section
 // get var
 let click1 = document.querySelector(".press1");

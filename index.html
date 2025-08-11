@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+     <link rel="icon" type="image/x-icon" href="assete/favicon.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -20,7 +21,7 @@
   <body>
     <!-- nav bar section -->
     <header>
-      <nav>
+      <nav  class="stickyHeader">
         <img src="assete/logo.png" alt="logo" />
         <div class="hamburger">
           <i class="fa-solid fa-bars fa-2x"></i>
@@ -29,13 +30,27 @@
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="service.html">Services</a>
-          <a href="">Required Documents</a>
+          <a href="documents.html">Required Documents</a>
           <a href="pricing.html">Pricing</a>
           <a href="#contacUs">Contact Us</a>
         </div>
 
-        <button>Get A Qoute</button>
+        <button class="clickForm">Get A Qoute</button>
       </nav>
+      <!-- pop up form -->
+       <div class="popUp">
+      <div class="popUpForm">
+        <span class="closePopUp">close</span>
+        <h1>Get Free Quote</h1>
+        <form action="">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="message" id="message">Message</textarea>
+        </form>
+        <button>Send</button>
+      </div>
+      </div>
+    
       <!-- hero section -->
       <div class="hero">
         <h1>Fast, Reliable & Verified Document Services Made Easy</h1>
@@ -43,7 +58,7 @@
           From Biometric Verification to FRC & Agreements. We Handle It
           Professionally.
         </p>
-        <button>Get A Qoute</button>
+        <button class="clickForm">Get A Qoute</button>
       </div>
     </header>
     <!-- service section -->
@@ -301,10 +316,10 @@
         </div>
         <div class="footMid">
           <h3>Services</h3>
-          <a href="">Biometric Verification</a>
-          <a href="">Stamp Paper Issuance</a>
-          <a href="">Agreements & Deeds</a>
-          <a href="">FRC from NADRA</a>
+          <a href="service.html">Biometric Verification</a>
+          <a href="service.html">Stamp Paper Issuance</a>
+          <a href="service.html">Agreements & Deeds</a>
+          <a href="service.html">FRC from NADRA</a>
         </div>
         <div class="footMid1">
           <h3>Quick Links</h3>
@@ -325,7 +340,7 @@
       <div class="footer2">
         <p>
           | &copy; 2025 Siddiqui Consultant. All rights reserved. | <br>
-          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="privacy.html">Privacy Policy</a>
         </p>
       </div>
     </section>
