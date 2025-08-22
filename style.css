@@ -299,7 +299,7 @@ nav button:hover ,
   color: white;
 
 }
-.testimonal .testimonalContent, .callUs .callUsContent{
+.callUs .callUsContent{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -538,7 +538,17 @@ nav button:hover ,
     opacity: 1;
     visibility: visible;
 }
-
+/* testimonal slide */
+.testimonal .testimonalContent{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.testimonalContent.active {
+  display: flex;
+}
 
 
 

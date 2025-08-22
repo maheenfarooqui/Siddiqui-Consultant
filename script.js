@@ -103,3 +103,21 @@ function showAnswer3() {
 click1.addEventListener("click", showAnswer1);
 click2.addEventListener("click", showAnswer2);
 click3.addEventListener("click", showAnswer3);
+
+
+//  slide for testimonals
+
+let tSlide = document.querySelectorAll(".testimonalContent");
+let index = 0 ;
+
+function showTestimonal(){
+  tSlide.forEach(slide => slide.classList.remove("active"));
+  tSlide[index].classList.add("active");
+  index++ ;
+  if(index >= tSlide.length){
+    index = 0;
+  }
+}
+
+showTestimonal();
+setInterval(showTestimonal, 3000);
