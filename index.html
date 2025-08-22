@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-     <link rel="icon" type="image/x-icon" href="assete/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assete/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,7 +21,7 @@
   <body>
     <!-- nav bar section -->
     <header>
-      <nav  class="stickyHeader">
+      <nav class="stickyHeader">
         <img src="assete/logo.png" alt="logo" />
         <div class="hamburger">
           <i class="fa-solid fa-bars fa-2x"></i>
@@ -37,20 +37,6 @@
 
         <button class="clickForm">Get A Qoute</button>
       </nav>
-      <!-- pop up form -->
-       <div class="popUp">
-      <div class="popUpForm">
-        <span class="closePopUp">close</span>
-        <h1>Get Free Quote</h1>
-        <form action="">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <textarea name="message" id="message">Message</textarea>
-        </form>
-        <button>Send</button>
-      </div>
-      </div>
-    
       <!-- hero section -->
       <div class="hero">
         <h1>Fast, Reliable & Verified Document Services Made Easy</h1>
@@ -61,6 +47,19 @@
         <button class="clickForm">Get A Qoute</button>
       </div>
     </header>
+       <!-- pop up form -->
+      <div class="popUp">
+        <div class="popUpForm">
+          <span class="closePopUp">close</span>
+          <h1>Get Free Quote</h1>
+          <form action="">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea name="message" id="message">Message</textarea>
+          </form>
+          <button>Send</button>
+        </div>
+      </div>
     <!-- service section -->
     <section class="services">
       <h1>What We Do?</h1>
@@ -85,7 +84,7 @@
             Official stamp papers for all legal needs including agreements,
             affidavits, and more.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
 
         <div class="serviceCard">
@@ -97,7 +96,7 @@
             Professionally drafted legal agreements and property deeds prepared
             and processed.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
       </div>
       <div class="serviceBox">
@@ -110,7 +109,7 @@
             Affidavits and undertakings prepared with proper format and
             notarization support.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
 
         <div class="serviceCard">
@@ -134,7 +133,7 @@
             Support for renewing your CNIC without the hassle – guided, fast and
             accurate.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
       </div>
       <div class="serviceBox">
@@ -147,7 +146,7 @@
             We help you with NADRA record verification for documents, identity
             and more.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
         <div class="serviceCard">
           <div class="iconCircle">
@@ -158,7 +157,7 @@
             We assist in official attestation of documents from government and
             notary offices for both personal and legal use.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
 
         <div class="serviceCard">
@@ -170,7 +169,7 @@
             Hassle-free process for correcting names in NADRA records, CNICs,
             and official documents.
           </p>
-          <a href="">Learn more</a>
+          <a href="service.html">Learn more</a>
         </div>
       </div>
     </section>
@@ -184,7 +183,11 @@
           biometric verification, affidavits, stamp papers, and NADRA-related
           services — all under one roof.
         </p>
-        <button>About Us</button>
+        <button>
+          <a href="about.html" style="text-decoration: none; color: white"
+            >About Us</a
+          >
+        </button>
       </div>
       <div class="aboutImage">
         <img src="assete/about.png.webp" alt="about us" />
@@ -194,22 +197,22 @@
     <section class="counter">
       <div class="counterContent">
         <i class="fa-solid fa-file-import"></i>
-        <h1>200+</h1>
+        <h1 id="counter1">200+</h1>
         <p>Documents Processed Monthly</p>
       </div>
       <div class="counterContent">
         <i class="fa-solid fa-face-smile"></i>
-        <h1>97%</h1>
+        <h1 id="counter2">97%</h1>
         <p>Client Satisfaction Rate</p>
       </div>
       <div class="counterContent">
         <i class="fa-solid fa-users"></i>
-        <h1>5628+</h1>
+        <h1 id="counter3">5628+</h1>
         <p>Happy Clients Served</p>
       </div>
       <div class="counterContent">
         <i class="fa-solid fa-circle-check"></i>
-        <h1>5637+</h1>
+        <h1 id="counter4">5637+</h1>
         <p>Successful Verifications</p>
       </div>
     </section>
@@ -280,12 +283,13 @@
     <section class="contact" id="contacUs">
       <div class="contactContent">
         <h1>Get Free Quote</h1>
-        <form action="">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Email" />
+        <form action="privacy.html" method="post">
+          <input type="text" name="username" required placeholder="Your Name" />
+          <input type="email" name="email" required placeholder="Email" />
           <textarea name="message" id="message">Message</textarea>
+           <button type="submit">Send</button>
         </form>
-        <button>Send</button>
+  
       </div>
       <div class="contactImage">
         <img src="assete/contact_thumb.png.webp" alt="about us" />
@@ -308,10 +312,11 @@
         <div class="footRight">
           <img src="assete/logo.png" alt="logo" />
           <p>
-            Siddiqui Consultant is your trusted partner <br />for
-            biometric verification, legal documentation,<br />
+            Siddiqui Consultant is your trusted partner <br />for biometric
+            verification, legal documentation,<br />
             NADRA services, and official attestations.<br />
-            Committed to accuracy, speed, and client <br> satisfaction.
+            Committed to accuracy, speed, and client <br />
+            satisfaction.
           </p>
         </div>
         <div class="footMid">
@@ -331,15 +336,19 @@
         <div class="footLeft">
           <h3>Follow US</h3>
           <div class="footIcons">
-           <div class="iconCircle"><i class="fa-brands fa-facebook-f"></i></div>
-           <div class="iconCircle"><i class="fa-brands fa-linkedin-in"></i></div>
-          <div class="iconCircle"><i class="fa-regular fa-envelope"></i></div>
+            <div class="iconCircle">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="iconCircle">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="iconCircle"><i class="fa-regular fa-envelope"></i></div>
           </div>
         </div>
       </div>
       <div class="footer2">
         <p>
-          | &copy; 2025 Siddiqui Consultant. All rights reserved. | <br>
+          | &copy; 2025 Siddiqui Consultant. All rights reserved. | <br />
           <a href="privacy.html">Privacy Policy</a>
         </p>
       </div>

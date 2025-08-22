@@ -14,28 +14,64 @@ window.addEventListener("scroll", function () {
 let clickButton = document.querySelectorAll(".clickForm");
 let closeBtn = document.querySelector(".closePopUp");
 let popupForm = document.querySelector(".popUp");
-function showForm(){
-    popupForm.classList.toggle("show");
-
+function showForm() {
+  popupForm.classList.toggle("show");
 }
-clickButton.forEach(button =>{
-    button.addEventListener("click", showForm);
-
+clickButton.forEach((button) => {
+  button.addEventListener("click", showForm);
 });
 closeBtn.addEventListener("click", () => {
-    popupForm.classList.remove("show");
+  popupForm.classList.remove("show");
 });
 
+// for carousal
+let images = ["assete/slide1.jpg", "assete/slide3.jpg", "assete/slide4.jpg"];
+let slideIndex = 0;
+let header = document.querySelector("header");
+function backgroundSlide() {
 
+    header.style.backgroundImage = `linear-gradient(to right, rgba(3, 112, 203, 0.9), rgba(3, 112, 203, 0)), url("${images[slideIndex]}")`;
+     slideIndex++;
+  if (slideIndex >= images.length) {
+    slideIndex = 0;
+  }
+}
 
+backgroundSlide();
 
+setInterval(backgroundSlide, 3000);
 
+//  for counter section
 
+function startCount(element, target, suffix) {
+  let count = 0;
+  let duration = 2000;
+  let step = Math.ceil(target / (duration / 20));
+  let countInterval = setInterval(() => {
+    count += step;
+    element.textContent = count + suffix;
 
+    if (count >= target) {
+      clearInterval(countInterval);
+    }
+  }, 20);
+}
 
+let started = false;
 
+window.addEventListener("scroll", function () {
+  let counterSection = document.querySelector(".counter");
+  let position = counterSection.getBoundingClientRect().top;
+  let screenHeight = this.window.innerHeight;
 
-
+  if (position < screenHeight && !started) {
+    startCount(document.querySelector("#counter1"), 200, "+");
+    startCount(document.querySelector("#counter2"), 97, "%");
+    startCount(document.querySelector("#counter3"), 5628, "+");
+    startCount(document.querySelector("#counter4"), 5637, "+");
+    started = true;
+  }
+});
 
 // for faqs section
 // get var
@@ -50,20 +86,20 @@ let aerrow2 = document.querySelector(".aerrow2");
 let aerrow3 = document.querySelector(".aerrow3");
 
 // write function
-function showAnswer1(){
-    answer1.classList.toggle("active");
-    aerrow1.classList.toggle("rotate");
+function showAnswer1() {
+  answer1.classList.toggle("active");
+  aerrow1.classList.toggle("rotate");
 }
-function showAnswer2(){
-    answer2.classList.toggle("active");
-    aerrow2.classList.toggle("rotate");
+function showAnswer2() {
+  answer2.classList.toggle("active");
+  aerrow2.classList.toggle("rotate");
 }
-function showAnswer3(){
-    answer3.classList.toggle("active");
-    aerrow3.classList.toggle("rotate");
+function showAnswer3() {
+  answer3.classList.toggle("active");
+  aerrow3.classList.toggle("rotate");
 }
 
 // add eventlistener
-click1.addEventListener("click" , showAnswer1);
-click2.addEventListener("click" , showAnswer2);
-click3.addEventListener("click" , showAnswer3);
+click1.addEventListener("click", showAnswer1);
+click2.addEventListener("click", showAnswer2);
+click3.addEventListener("click", showAnswer3);

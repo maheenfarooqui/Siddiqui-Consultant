@@ -18,6 +18,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: opacity 1s ease-in-out;
     height: 100vh;
 }
 .stickyHeader {
@@ -341,7 +342,7 @@ nav button:hover ,
     gap: 20px;
     justify-content: center;
     align-items: center;
-    height:250px;
+    height:280px;
 }
 .contactContent form input{
     width: 450px;
@@ -353,8 +354,8 @@ nav button:hover ,
 }
 .contactContent form textarea{
     width: 450px;
-     padding: 40px 0 0 0;
-     border: none;
+    padding: 40px 0 0 0;
+    border: none;
     border-bottom: 1px solid #E0E0E0;
     color: gray;
     outline: none;
@@ -367,6 +368,7 @@ nav button:hover ,
     padding: 10px 20px;
     border-radius: 20px;
     width: 90%;
+    margin-top: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -460,7 +462,7 @@ nav button:hover ,
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -469,6 +471,7 @@ nav button:hover ,
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease;
+    z-index: 1000;
 }
 .popUpForm{
     display: flex;
@@ -480,7 +483,7 @@ nav button:hover ,
     background-color:white;
     padding: 50px 20px;
     border-radius: 20px;
-    position: relative;
+    position: fixed;
 }
 .popUpForm span{
     position: absolute;
