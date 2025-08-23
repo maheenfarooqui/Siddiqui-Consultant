@@ -36,13 +36,25 @@
           <a href="#contactUs">Contact Us</a>
         </div>
 
-        <button>Get A Qoute</button>
+        <button class="clickForm">Get A Qoute</button>
       </nav>
       <!-- hero section -->
       <div class="heroService">
         <h1>Service</h1>
       </div>
     </header>
+      <div class="popUp">
+        <div class="popUpForm">
+          <span class="closePopUp">close</span>
+          <h1>Get Free Quote</h1>
+          <form action="">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea name="message" id="message">Message</textarea>
+          </form>
+          <button>Send</button>
+        </div>
+      </div>
      <!-- service section -->
     <section class="services">
       <h1>What We Do?</h1>
@@ -54,7 +66,7 @@
             Get your biometric data verified for legal and documentation
             purposes with ease.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
         <div class="serviceCard">
           <div class="iconCircle">
@@ -65,7 +77,7 @@
             Official stamp papers for all legal needs including agreements,
             affidavits, and more.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
         <div class="serviceCard">
           <div class="iconCircle">
@@ -76,7 +88,7 @@
             Professionally drafted legal agreements and property deeds prepared
             and processed.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
       </div>
       <div class="serviceBox">
@@ -89,7 +101,7 @@
             Affidavits and undertakings prepared with proper format and
             notarization support.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
 
         <div class="serviceCard">
@@ -101,7 +113,7 @@
             Assistance with obtaining Family Registration Certificate (FRC)
             quickly and reliably.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
 
         <div class="serviceCard">
@@ -113,7 +125,7 @@
             Support for renewing your CNIC without the hassle – guided, fast and
             accurate.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
       </div>
       <div class="serviceBox">
@@ -126,7 +138,7 @@
             We help you with NADRA record verification for documents, identity
             and more.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
         <div class="serviceCard">
           <div class="iconCircle">
@@ -137,7 +149,7 @@
             We assist in official attestation of documents from government and
             notary offices for both personal and legal use.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
 
         <div class="serviceCard">
@@ -149,7 +161,7 @@
             Hassle-free process for correcting names in NADRA records, CNICs,
             and official documents.
           </p>
-          <a href="">Learn more</a>
+          <a href="pricing.html">Learn more</a>
         </div>
       </div>
     </section>
@@ -157,12 +169,13 @@
     <section class="contact" id="contactUs">
       <div class="contactContent">
         <h1>Get Free Quote</h1>
-        <form action="">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Email" />
+        <form action="privacy.html" method="post">
+          <input type="text" name="username" required placeholder="Your Name" />
+          <input type="email" name="email" required placeholder="Email" />
           <textarea name="message" id="message">Message</textarea>
+          <button type="submit">Send</button>
         </form>
-        <button>Send</button>
+        
       </div>
       <div class="contactImage">
         <img src="assete/contact_thumb.png.webp" alt="about us" />
@@ -176,7 +189,7 @@
           Our team is available to assist you with document services,
           verification, and legal <br />support. Feel free to reach out anytime.
         </p>
-        <button>+923333349707</button>
+        <button onclick="window.location.href='tel:+923001234567'">+923333349707</button>
       </div>
     </section>
     <!-- footer section -->

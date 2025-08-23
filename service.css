@@ -22,6 +22,7 @@ header{
 .heroService h1{
     font-size: 80px;
     font-weight: 700;
+    margin-top: 70px;
 }
 @media all and (max-width:500px){
     .heroService{
