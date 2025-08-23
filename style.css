@@ -519,12 +519,12 @@ nav button:hover ,
 .popUpForm form textarea{
     width: 100%;
     max-width: 450px;
-    padding: 40px 0 0 0;
+    padding: 20px 0 0 0;
     border: none;
     border-bottom: 1px solid #E0E0E0;
     color:gray;
     outline: none;
-     background-color: transparent;
+    background-color: transparent;
 }
 .popUpForm button{
     background: linear-gradient(135deg, #079643, #0cb76c);
