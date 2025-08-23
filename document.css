@@ -12,6 +12,7 @@
 .heroD h1{
     font-size: 80px;
     font-weight: 700;
+    margin-top: 70px;
 }
 .document{
     margin-top: 80px;
@@ -26,7 +27,7 @@
     flex-direction: column;
     gap: 20px;
 }
-.documentContent h1{
+.documentContent h2{
     font-size: 40px;
     font-weight: 300;
 }
@@ -41,6 +42,7 @@
     font-size: 18px;
     padding: 15px 20px;
     border-radius: 20px;
+    outline: none;
     width: 270px;
     cursor: pointer;
     transition: 0.3s;
@@ -49,6 +51,11 @@
     background: linear-gradient(135deg, #0cb76c , #079643);
     
 }
+.documentContent button a{
+    text-decoration: none;
+    color: white;
+}
+
 .documentImage img{
     border-radius: 20px;
     
@@ -121,4 +128,34 @@
   color: #0370CB;
   font-size: 1.2em;
 }
-
+@media all and (max-width:500px){
+.heroD{
+    width: 90%;
+    padding: 50px 15px;
+}
+.heroD h1{
+    margin-top: 90px;
+    font-size: 30px;
+}
+.document{
+    flex-direction: column;
+    padding:0 40px ;
+}
+.documentImage img{
+    width: 300px;
+    
+}
+.documentCard{
+    padding: 0 40px;
+}
+.documentCard h1{
+    font-size: 30px;
+}
+.documentBox{
+    flex-direction: column;
+    gap: 40px;
+}
+.dpCard{
+    width: 250px;
+}
+}
