@@ -38,6 +38,10 @@
     background: linear-gradient(135deg, #0cb76c , #079643);
     
 }
+.pricingContent button a{
+    text-decoration: none;
+    color: white;
+}
 .pricingImage img{
     border-radius: 20px;
     
@@ -138,4 +142,29 @@
     position: absolute;
     left: 0;
     top: 4px;
+}
+
+
+@media all and (max-width:500px){
+    .pricing{
+      padding: 0 20px;
+      flex-direction: column;
+    }
+    .pricingImage img{
+      width: 300px;
+}
+    .pricingContent h1{
+      font-size: 30px;
+    }
+    .pricingCard{
+      padding: 0 40px;
+}
+    .pricingCard h1{
+      font-size: 30px;
+}
+    .pricingBox{
+      flex-direction: column;
+}
+
+
 }

@@ -37,13 +37,25 @@
           <a href="#contactUs">Contact Us</a>
         </div>
 
-        <button>Get A Qoute</button>
+        <button class="clickForm">Get A Qoute</button>
       </nav>
       <!-- hero section -->
       <div class="heroService">
         <h1>Our Pricing</h1>
       </div>
     </header>
+     <div class="popUp">
+        <div class="popUpForm">
+          <span class="closePopUp">close</span>
+          <h1>Get Free Quote</h1>
+         <form action="privacy.html" method="post">
+            <input type="text" name="username" required placeholder="Your Name" />
+            <input type="email" name="email" required placeholder="Email" />
+            <textarea name="message" id="message">Message</textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     <!-- pricing section -->
     <section class="pricing">
       <div class="pricingContent">
@@ -53,14 +65,14 @@
           verification services. No hidden fees — just quick, professional
           support you can rely on.
         </p>
-        <button>View Our Packages</button>
+        <button><a href="#pSection">View Our Packages</a></button>
       </div>
       <div class="pricingImage">
         <img src="assete/about.png.webp" alt="about us" />
       </div>
     </section>
     <!-- pricing card section -->
-    <section class="pricingCard">
+    <section class="pricingCard" id="pSection">
       <h1>Transparent Pricing for Every Service</h1>
       <div class="pricingBox">
         <div class="pCard">
@@ -72,7 +84,7 @@
           <div class="priceBox">
             <span>start from</span>
             <h1>500rs</h1>
-            <a href=""> Get Started</a>
+            <a href="#contactUs"> Get Started</a>
           </div>
           <h3>Includes:</h3>
           <div class="list">
@@ -106,7 +118,7 @@
           <div class="priceBox">
             <span>start from</span>
             <h1>1500</h1>
-            <a href=""> Contact for NADRA Help</a>
+            <a href="#contactUs"> Contact for NADRA Help</a>
           </div>
           <h3>Includes:</h3>
           <div class="list">
@@ -143,7 +155,7 @@
           <div class="priceBox">
             <span>start from</span>
             <h1>2500</h1>
-            <a href="">Request Full Service</a>
+            <a href="#contactUs">Request Full Service</a>
           </div>
           <h3>Includes:</h3>
           <div class="list">
@@ -175,12 +187,12 @@
     <section class="contact" id="contactUs">
       <div class="contactContent">
         <h1>Get Free Quote</h1>
-        <form action="">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <textarea name="message" id="message">Message</textarea>
-        </form>
-        <button>Send</button>
+         <form action="privacy.html" method="post">
+            <input type="text" name="username" required placeholder="Your Name" />
+            <input type="email" name="email" required placeholder="Email" />
+            <textarea name="message" id="message">Message</textarea>
+            <button type="submit">Send</button>
+          </form>
       </div>
       <div class="contactImage">
         <img src="assete/contact_thumb.png.webp" alt="about us" />
@@ -194,7 +206,7 @@
           Our team is available to assist you with document services,
           verification, and legal <br />support. Feel free to reach out anytime.
         </p>
-        <button>+923333349707</button>
+        <button onclick="window.location.href='tel:+923001234567'">+923333349707</button>
       </div>
     </section>
     <!-- footer section -->
