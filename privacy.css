@@ -1,0 +1,35 @@
+header{
+    background: linear-gradient(to right, rgba(3, 112, 203, 0.9), rgba(3, 112, 203, 0)), 
+  url("assete/slide2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 1s ease-in-out;
+    height: 90vh !important;
+}
+
+main{
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    color: gray;
+    line-height: 1.7;
+}
+main h1{
+    color: #0370cb;
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+p{
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 40px;
+}
+main h2{
+    color: #0370cb; font-family: 'Lora', serif;
+    margin-top: 30px;
+}
+ul{
+    padding-left: 20px; 
+    list-style-type: square;
+}
