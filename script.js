@@ -52,3 +52,16 @@ backgroundSlide();
 
 setInterval(backgroundSlide, 3000);
 
+// dark mode
+
+let darkModeBtn = document.querySelector(".darkbtn");
+
+darkModeBtn.addEventListener("click", function(){
+
+  document.body.classList.toggle("darkMode");
+  if(document.body.classList.contains("darkMode")){
+    darkModeBtn.textContent = "Dark Mode"
+  }
+else{
+ darkModeBtn.textContent = "light Mode";
+}});

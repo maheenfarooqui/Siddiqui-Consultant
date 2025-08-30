@@ -562,7 +562,26 @@ nav button:hover ,
   display: flex;
 }
 
+/* dark mode */
+body.darkMode {
+  background-color: #0D0D0D;
+  color: #E5E5E5;
+}
 
+body.darkMode h1,
+body.darkMode h2,
+body.darkMode h3 {
+  color: #FFFFFF;
+}
+
+body.darkMode a {
+  color: #5aa9f4; /* Tumhara brand blue */
+}
+
+body.darkMode button {
+  background: linear-gradient(135deg, #0cb76c , #079643);
+  color: #fff;
+}
 
 
 
