@@ -567,7 +567,6 @@ body.darkMode {
   background-color: #0D0D0D;
   color: #E5E5E5;
 }
-
 body.darkMode h1,
 body.darkMode h2,
 body.darkMode h3 {
@@ -575,12 +574,46 @@ body.darkMode h3 {
 }
 
 body.darkMode a {
-  color: #5aa9f4; /* Tumhara brand blue */
+  color: #5aa9f4;
 }
 
 body.darkMode button {
-  background: linear-gradient(135deg, #0cb76c , #079643);
+  background: linear-gradient(135deg, #0cb76c , black);
   color: #fff;
+}
+.darkbtn{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.darkbtn:hover{
+  background: #0056b3;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.back-to-top:hover {
+  background: #0056b3;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 

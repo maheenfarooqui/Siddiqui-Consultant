@@ -60,8 +60,8 @@ darkModeBtn.addEventListener("click", function(){
 
   document.body.classList.toggle("darkMode");
   if(document.body.classList.contains("darkMode")){
-    darkModeBtn.textContent = "Dark Mode"
+    darkModeBtn.textContent = "Light"
   }
 else{
- darkModeBtn.textContent = "light Mode";
+ darkModeBtn.textContent = "Dark";
 }});
