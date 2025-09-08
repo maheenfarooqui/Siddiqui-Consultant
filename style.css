@@ -576,6 +576,9 @@ body.darkMode h3 {
 body.darkMode a {
   color: #5aa9f4;
 }
+body.darkMode .popUpForm{
+    background-color: #0D0D0D;
+}
 
 body.darkMode button {
   background: linear-gradient(135deg, #0cb76c , black);
